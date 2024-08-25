@@ -1,4 +1,4 @@
-package com.MiniAccount.demo.Models;
+package com.MiniAccount.Server.Models;
 
 import jakarta.persistence.*;
 
@@ -23,6 +23,8 @@ public class Chore {
         this.completed = false;
         this.dateCompleted = null;
     }
+
+    public Chore() {}
 
     // Getters and Setters
     public Long getId() {
@@ -59,5 +61,9 @@ public class Chore {
 
     public void setDateCompleted(LocalDate dateCompleted) {
         this.dateCompleted = dateCompleted;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }
